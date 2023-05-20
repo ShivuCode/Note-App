@@ -38,16 +38,16 @@ class NoteTile extends StatelessWidget {
                   prefixIcon:const  Icon(Icons.title),
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
-                      borderSide: const BorderSide(color: Colors.blue)),
+                      borderSide: const BorderSide(color: Colors.cyan)),
                   enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
-                      borderSide: const BorderSide(color: Colors.blue)),
+                      borderSide: const BorderSide(color: Colors.cyan)),
                   focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
-                      borderSide: const BorderSide(color: Colors.blue)),
+                      borderSide: const BorderSide(color: Colors.cyan)),
                   errorBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
-                      borderSide: const BorderSide(color: Colors.blue)),
+                      borderSide: const BorderSide(color: Colors.cyan)),
                 ),
               ),
               const SizedBox(height: 15),
@@ -59,16 +59,16 @@ class NoteTile extends StatelessWidget {
                   hintStyle:const TextStyle(color: Colors.grey),
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
-                      borderSide: const BorderSide(color: Colors.blue)),
+                      borderSide: const BorderSide(color: Colors.cyan)),
                   enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
-                      borderSide: const BorderSide(color: Colors.blue)),
+                      borderSide: const BorderSide(color: Colors.cyan)),
                   focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
-                      borderSide: const BorderSide(color: Colors.blue)),
+                      borderSide: const BorderSide(color: Colors.cyan)),
                   errorBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
-                      borderSide: const BorderSide(color: Colors.blue)),
+                      borderSide: const BorderSide(color: Colors.cyan)),
                 ),
               )
             ],
