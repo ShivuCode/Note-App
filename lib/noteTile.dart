@@ -21,7 +21,7 @@ class NoteTile extends StatelessWidget {
               DbHelper.insertNote(Note(title: title.text, desc: desc.text,date: "${dt.day}/${dt.month}/${dt.year} ${dt.hour}:${dt.minute}"));
               Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=>const HomePage()));
             }
-          }, child: const Text("Save"))
+          }, child: Text("Save".toUpperCase(),style: const TextStyle(fontSize:16,fontWeight: FontWeight.w400,letterSpacing: 0.8),))
         ],
       ),
       body: Padding(
