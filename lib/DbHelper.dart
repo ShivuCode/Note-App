@@ -21,6 +21,15 @@ class DbHelper {
     await database.insert('note', {'title':note.title,'desc':note.desc,'date':note.date});
     print("inserted");
   }
+  //INSERTING ALL NOTES
+  static Future<void> insertAll(List<Map<String, dynamic>> notes)async{
+    final db=await openDb();
+    await db.transaction((txn) async {
+      for (final Map<String, dynamic> data in notes) {
+        await txn.insert('note', data);
+      }
+    });
+  }
   //FETCHING ALL NOTES
   static Future<List<Map<String, dynamic>>> getAllRecords() async {
     final database = await openDb();

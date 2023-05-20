@@ -59,8 +59,15 @@ class _HomePageState extends State<HomePage> {
         actions: [
           TextButton(
             onPressed: () {
+              var note=notes;
               DbHelper.deleteAllNote();
               fetchData();
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: const Text('All Deleted'),action: SnackBarAction(label: 'Undo',onPressed: (){
+                  DbHelper.insertAll(note);
+                  fetchData();
+                },),),
+              );
             },
             child: Text("Delete All".toUpperCase(),style: const TextStyle(fontSize: 14,color: Colors.black,fontWeight: FontWeight.w400))
           )
